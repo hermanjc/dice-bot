@@ -11,6 +11,13 @@ async def on_ready():
 async def on_message(message):
     if message.author == client.user:
         return
+    
+    if message.content == "curl parrot.live":
+        print("curling parrot.live")
+        parrot = discord.Embed()
+        parrot.set_image(url="https://thumbs.gfycat.com/IndelibleAliveAmericancrow-max-1mb.gif")
+        print(parrot.image)
+        await message.channel.send(embed=parrot)
 
     if message.content.startswith('/roll '):
         dice_str = message.content[message.content.find(' ') + 1:]
