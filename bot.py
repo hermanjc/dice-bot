@@ -19,6 +19,10 @@ async def on_message(message):
         print(parrot.image)
         await message.channel.send(embed=parrot)
 
+    if message.content == "curl jackv.co":
+        print("curling jackv.co")
+        await message.channel.send("I'm Jack VanDrunen. I am a fourth-year undergraduate at UC Irvine studying computer science with an emphasis in intelligent systems, and an incoming graduate student in logic and philosophy of science at UC Irvine. I have done research with Zygmunt Pizlo and Jeffrey A. Barrett. Please add me on LinkedIn.")
+
     if message.content.startswith('/roll '):
         dice_str = message.content[message.content.find(' ') + 1:]
 
