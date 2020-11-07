@@ -21,7 +21,7 @@ async def on_message(message):
 
     if message.content == "curl jackv.co":
         print("curling jackv.co")
-        await message.channel.send("I'm Jack VanDrunen. I am a fourth-year undergraduate at UC Irvine studying computer science with an emphasis in intelligent systems, and an incoming graduate student in logic and philosophy of science at UC Irvine. I have done research with Zygmunt Pizlo and Jeffrey A. Barrett. Please add me on LinkedIn.")
+        await message.channel.send("I'm Jack VanDrunen. I am a graduate student in the department of logic and philosophy of science at the University of California, Irvine (UCI). I received my B.S. in computer science from UCI in spring 2020, with a specialization in intelligent systems. Please add me on LinkedIn and follow me on GitHub.")
 
     if message.content.startswith('/roll '):
         dice_str = message.content[message.content.find(' ') + 1:]
