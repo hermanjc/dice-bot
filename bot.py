@@ -18,7 +18,7 @@ async def on_message(message):
     if message.content == "curl parrot.live":
         print("curling parrot.live")
         parrot = discord.Embed()
-        parrot.set_image(url="https://thumbs.gfycat.com/IndelibleAliveAmericancrow-max-1mb.gif")
+        parrot.set_image(url="https://cultofthepartyparrot.com/parrots/hd/parrot.gif")
         print(parrot.image)
         await message.channel.send(embed=parrot)
 
